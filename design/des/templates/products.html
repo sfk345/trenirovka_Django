@@ -1,0 +1,12 @@
+{% extends 'basic.html' %}
+
+<h2>Продукты</h2>
+{% block content %}
+    {% for product in products %}
+        <div>
+            {{ product.name }}
+            {{ product.title }}
+            {{ product.price }}
+        </div>
+    {% endfor %}
+{% endblock %}
